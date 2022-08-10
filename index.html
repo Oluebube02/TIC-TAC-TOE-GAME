@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div style="display: flex; color: red; margin-bottom:15px; justify-content: center;">
+    <p1>LET'S PLAY TIC-TAC-TOE!</p1>
+  </div>
+  <div id='xinputdiv'>
+    Player X Enter Name:
+    <input id='inputx' type='text' placeholder='Enter name'>
+    <button id='buttonX' style="background-color: yellow">Submit</button>
+    <p id='warningX'></p>
+  </div>
+  <div id='oinputdiv'>
+    Player O Enter Name:
+    <input id='inputo' type='text' placeholder='Enter name'>
+    <button id='buttonO' style="background-color: yellow">Submit</button>
+    <p id='warningO'></p>
+  </div>
+  <div style="display: flex; color: black; margin-bottom:15px; justify-content: center;">
+    <p1><span id='xplayer'>PlayerX:</span><span id='xscore'>0</span><span>
+        vs </span><span id='oplayer'>PlayerO:</span> <span id='oscore'>0</span></p1>
+  </div>
+  <div id='buttons' style="display:flex; justify-content: center;">
+    <button class='button' id='1'></button>
+    <button class='button' id='2'></button>
+    <button class='button' id='3'></button>
+  </div>
+  <div id='buttons' style="display:flex; justify-content: center;">
+    <button class='button' id='4'></button>
+    <button class='button' id='5'></button>
+    <button class='button' id='6'></button>
+  </div>
+  <div id='buttons' style="display:flex; justify-content: center;">
+    <button class='button' id='7'></button>
+    <button class='button' id='8'></button>
+    <button class='button' id='9'></button>
+  </div>
+
+  <div id='playerbuttons'
+    style="display:flex; justify-content: space-between; padding-left: 200px; padding-right: 200px; margin: 15px;">
+    <button class='players' id='playerX'>PlayerX</button>
+    <button class='players' id='playerO'>PlayerO</button>
+  </div>
+  <div
+    style="background-color: yellow; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; height:30px"
+    id='nextplayer'>
+    Start Game!</div>
+  <div
+    style="background-color: black; display: flex; justify-content: center; align-items: center; height:35px; color: white"
+    id='winner'>Press play to Start</div>
+  <div style="display: flex; justify-content: center; margin-top:10px">
+    <button id='play' style="background-color: yellow; border:none; height: 45px; margin-left: 10px;"> Play
+      Game</button>
+    <button id = 'close' style="background-color: yellow; border:none; height: 45px; margin-left: 10px; width: 85px; color: black; white-space: nowrap;" onclick="self.close()">Close Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
